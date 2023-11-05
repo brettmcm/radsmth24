@@ -1,0 +1,83 @@
+@import './util.module.scss';
+
+.logos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    min-height: 50vw;
+
+    padding: 0 calc(0.5em + 4vw) calc(0.5em + 4vw)  calc(0.5em + 4vw);
+    gap: 2em;
+
+    .item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 82vw;
+        border-radius: 1px;
+
+        .itemDisplay {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .itemImg {
+            width: 60%;
+            height: 70%;
+            object-fit: contain;
+        }
+
+        .itemImgIcon {
+            width: 30%;
+            height: 30%;
+            opacity: 0.9;
+        }
+    }
+
+    .secondary {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        flex:2;
+        gap: 2em;
+
+        height: 100vw;
+    }
+
+    @media screen and (min-width: 700px) {
+        height: 100vh;
+        min-height: 100vw;
+
+        .item {
+            flex: 1;
+            height: auto;
+        }
+        .secondary {
+            flex-direction: row;
+            height: auto;
+            flex: 1;
+        }
+    }
+
+    @media screen and (min-width: 1400px) {
+        flex-direction: row;
+        min-height: 50vw;
+
+        &.flip {
+            flex-direction: row-reverse;
+        }
+
+        .secondary {
+            flex-direction: column;
+            flex: 0.8;
+        }
+    }
+
+}

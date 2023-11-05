@@ -1,0 +1,19 @@
+.row, .col {
+    display: flex;
+    flex-direction: column;
+}
+
+.rightcol {
+    padding: 0 calc(0.5em + 4vw) calc(0.5em + 4vw) calc(0.5em + 4vw);
+}
+
+@media screen and (min-width: 1400px) {
+    .row {
+        flex-direction: row;
+    }
+
+    .rightcol {
+        padding: calc(2em + 12vw) calc(0.5em + 4vw) calc(3em + 2vw) calc(0.5em + 4vw);
+        flex: 1;
+    }
+}

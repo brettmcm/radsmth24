@@ -1,0 +1,39 @@
+.label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: calc(2em + 12vw) calc(0.5em + 4vw) calc(3em + 2vw) calc(0.5em + 4vw);
+
+    font-size: 0.9em;
+
+    .overview {
+        h2 {
+            font-weight: 700;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            max-width: calc(500px + 3em);
+            font-weight: 200;
+            padding-right: 3em;
+            line-height: 1.5em;
+        }
+    }
+
+    .chapter {
+        font-weight: 700;
+        text-align: right;
+        line-height: 1.75em;
+    }
+
+}
+
+.disruptor {
+    display: relative;
+    width: calc(100% - (1em + 8vw));
+    height: 90vh;
+    max-height: 70vw;
+    background-size: cover;
+    background-position: center center;
+    margin: calc(0.5em + 4vw);
+}
