@@ -9,13 +9,13 @@ export default function Home() {
 
   var product = [
         {
-          src: '/canary/jar.png',
-          weight: 'heavy',
+          src: '/canary/bottle1.png',
+          weight: 'even',
           fx: 'none'
         },
         {
-          src: '/canary/bottle1.png',
-          weight: 'even',
+          src: '/canary/jar.png',
+          weight: 'heavy',
           fx: 'none'
         }
       ];
