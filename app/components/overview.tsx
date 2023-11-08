@@ -36,7 +36,7 @@ export default function Overview(props: any) {
                         <p>2022</p>
                     </li>
                 </ul>
-                <p className={styles.desc}>With no desire to join the green-washed eco-friendly aesthetic, Canary approached Radsmth with the challenge of bringing the company's subversive, punk-rock ethos to the world of plastic-free, sustainable personal & home care products.</p>
+                <p className={styles.desc}>With no desire to join the green-washed eco-friendly aesthetic, Canary approached Radsmth with the challenge of bringing the company&apos;s subversive, punk-rock ethos to the world of plastic-free, sustainable personal & home care products.</p>
             </div>
         </section>
     )
