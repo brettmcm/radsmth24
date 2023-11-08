@@ -1,44 +1,34 @@
 @import './util.module.scss';
 
-.colors {
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-
-    width: 100%;
-    gap: 1em;
-
-    .primary {
-        flex: 1;
-    }
-
-    .secondary {
-        display: flex;
-        flex-direction: column;
-        justify-content: stretch;
-
-        gap: 1em;
-        flex: 1;
-    }
+.color {
+    padding: 1em 1.1em;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.color {
-    flex: 1;
-    padding: 1em;
-    aspect-ratio: 4/1;
-    border-radius: 1px;
+.colors {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: calc(100px + 20vw);
+    border-radius: 2px;
+    overflow: hidden;
+
+    & > div {
+        flex-basis: 50%;
+
+        &:first-child {
+            flex-basis: 100%;
+        }
+    }
+    
 }
 
 @media screen and (min-width: 700px) {
     .colors {
-        flex-direction: row;
-        .secondary {
-            flex: 1.5;
-        }
-    }
-}
-@media screen and (min-width: 1400px) {
-    .color {
-        aspect-ratio: 2.5/1;
+        flex-direction: column;
     }
 }

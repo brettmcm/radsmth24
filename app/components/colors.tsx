@@ -17,9 +17,9 @@ const fifth = "#FF6D6A";
                 title="Brand Colors"
                 desc={props.desc}
             />
-            <section className={`${styles.rightcol} ${styles.colors}`}>
-                <ColorBar color={first} fg="black" name="Mint" className={styles.primary} />
-                <div className={styles.secondary}>
+            <section className={styles.rightcol}>
+                <div className={styles.colors}>
+                    <ColorBar color={first} fg="black" name="Mint" />
                     <ColorBar color={second} fg="black" name="Bone" />
                     <ColorBar color={third} fg="white" name="Concrete" />
                     <ColorBar color={forth} fg="white" name="Pavement" />

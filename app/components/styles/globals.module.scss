@@ -1,13 +1,19 @@
+.mainCol {
+    // max-width: 2200px;
+    // margin: 0 auto;
+}
+
 .label {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: calc(2em + 12vw) calc(0.5em + 4vw) calc(3em + 2vw) calc(0.5em + 4vw);
+    padding: calc(2em + 15vw) calc(0.5em + 4vw) calc(3em + 2vw) calc(0.5em + 4vw);
 
     font-size: 0.9em;
 
     .overview {
         h2 {
+            position:relative;
             font-weight: 700;
             margin-bottom: 0.5em;
         }
@@ -28,12 +34,47 @@
 
 }
 
-.disruptor {
-    display: relative;
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
     width: calc(100% - (1em + 8vw));
-    height: 90vh;
-    max-height: 70vw;
-    background-size: cover;
-    background-position: center center;
-    margin: calc(0.5em + 4vw);
+    margin: calc(2em + 15vw) calc(0.5em + 4vw) calc(3em + 2vw) calc(0.5em + 4vw);
+
+    .container {
+        height: 100%;
+        flex: 1;
+
+        transition: flex 1s;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 2px;
+
+            &.difference {
+                mix-blend-mode: difference;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .gallery {
+        flex-direction: row;
+        height: 70vh;
+        max-height: 50vw;
+
+        .container.heavy { flex: 1; }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .gallery {
+        flex-direction: row;
+        aspect-ratio: 16/9;
+
+        .container.heavy { flex: 1.5; }
+    }
 }
