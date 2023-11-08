@@ -1,3 +1,4 @@
+import Overview from './components/overview'
 import Logos from './components/logos'
 import Colors from './components/colors'
 import Gallery from './components/gallery'
@@ -21,12 +22,12 @@ export default function Home() {
       ];
   var kids = [
         {
-          src: '/canary/bottle2.jpg',
-          weight: 'even',
+          src: '/canary/kids.jpg',
+          weight: 'heavy',
           fx: 'none'
         },
         {
-          src: '/canary/kids.jpg',
+          src: '/canary/bottle2.jpg',
           weight: 'even',
           fx: 'none'
         }
@@ -45,17 +46,11 @@ export default function Home() {
           fx: 'none'
         }
       ];
-    var skate = [
-        {
-          src: '/canary/skate.jpg',
-          weight: 'even',
-          fx: 'none'
-        }
-      ];
+    
 
   return (
     <main className={styles.mainCol}>
-      <Gallery images={skate} />
+      <Overview hero="/canary/skate.jpg"/>
       <Gallery images={tag} />
       <Logos
         chapter="01"

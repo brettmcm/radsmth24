@@ -1,0 +1,72 @@
+.overview {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5vw;
+
+    width: 100%;
+    padding: calc(0.5em + 4vw);
+
+    .details {
+        flex: 1;
+
+        h1 {
+                font-size: 3em;
+                font-weight: 500;
+            }
+        
+        ul {
+    
+            margin: 1em 0;
+            border-top: 1px solid rgba(127, 127, 127, 0.2);
+    
+            li {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+    
+                width: 100%;
+                padding: 0.6em 0;
+                border-bottom: 1px solid rgba(127, 127, 127, 0.2);
+    
+                font-size: 0.8em;
+                line-height: 1.5rem;
+    
+                h3 {
+                    font-size: 0.9em;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    opacity: 0.8;
+
+                    width: 125px;
+                }
+
+                p {
+                    flex: 2;
+                }
+            }
+        }
+
+        p.desc {
+            font-size: 0.9em;
+            margin: 2em 0;
+            font-weight: 200;
+        }
+    }
+
+    .hero {
+        flex: 1.5;
+        width: 100vw;
+        height: 80vh;
+        max-height: 100vw;
+        object-fit: cover;
+        border-radius: 2px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .overview {
+        flex-direction: row;
+    }
+}
