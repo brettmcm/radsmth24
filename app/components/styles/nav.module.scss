@@ -74,6 +74,20 @@
 
     gap: 0.5em;
 
+    &:after {
+        position: absolute;
+        left: -6px;
+        top: -6px;
+        width: calc(100% + 12px);
+        height: calc((100% + 12px) - (1em + 4vw));
+        margin: calc(0.5em + 2vw) 0;
+        background: rgba(var(--difference-rgb), 0.05);
+        border: 1px solid rgba(var(--difference-rgb), 0.05);
+        content: '';
+        border-radius: 4em;
+        z-index: -100;
+    }
+
     .navLink {
         position: relative;
         font-size: 0.9em;
