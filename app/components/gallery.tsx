@@ -1,4 +1,4 @@
-import styles from './styles/globals.module.scss'
+import styles from './styles/gallery.module.scss'
 import Image from 'next/image'
 
 export default function Gallery(props: any) {
@@ -9,7 +9,9 @@ export default function Gallery(props: any) {
         <div>
         <section className={styles.gallery}>
             {props.images.map((image: any, i: any) => (
-                <div className={`${styles.container} ${styles[`${image.weight}`]}`} key={i}>
+                <div className={`${styles.container} ${styles[`${image.weight}`]} ${styles[`${image.type}`]}`}
+                     style={{ background: `${image.bg}`}}
+                     key={i}>
                     <img src={image.src} className={styles[`${image.fx}`]} />
                 </div>
             ))}
