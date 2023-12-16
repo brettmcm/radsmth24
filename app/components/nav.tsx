@@ -18,7 +18,7 @@ export default function Nav(props: any) {
     return (
         <nav id="nav" className={styles.nav}>
           <div className={styles.highlighter} style={{ left: `${pos + "px"}`, width: `${width + "px"}`}}></div>
-          <Link href="/" className={`${styles.navLink} ${styles.logo}`} onClick={handleClick}>&#9775;</Link>
+          <Link href="/" className={`${styles.navLink} ${styles.logo}`} onClick={handleClick}>R—</Link>
           <Link href="/brands" className={styles.navLink} onClick={handleClick}>Branding</Link>
           <Link href="/craft" className={styles.navLink} onClick={handleClick}>Craft</Link>
           <Link href="/services" className={styles.navLink} onClick={handleClick}>Studio</Link>
