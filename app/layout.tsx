@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import { Inter, Bricolage_Grotesque } from 'next/font/google'
 import './globals.css'
 import Link from 'next/link';
+import Nav from './components/nav'
 
 import styles from './components/styles/nav.module.scss'
-import Nav from './components/nav'
 
 export const inter = Inter({
   subsets: ['latin'],
-  weight: ['200', '300', '500', '800']
+  weight: ['200', '400', '500', '800']
 })
 
 export const bric = Bricolage_Grotesque({
@@ -30,15 +30,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={bric.className}>
-        <header className={styles.header}>
-            {/* <Link href="/" className={styles.logo}>R<span className={styles.fullName}>adsmth</span>—</Link> */}
-        </header>
+      <body className={inter.className}>
+        <header className={styles.header} />
         {children}
-        <Nav />
-        <footer className={styles.footer}>
+        {/* <footer className={styles.footer}>
             <a className={styles.contactbutton} href="#">Contact</a>
-        </footer>
+        </footer> */}
+        <Nav />
+        
       </body>
     </html>
   )

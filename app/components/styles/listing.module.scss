@@ -1,0 +1,47 @@
+.centerStage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: calc(4em + 8vw) 0;
+    background-size: cover;
+    background-position: center center;
+
+    &.bloop { background-image: url('../../../public/canary/kids.jpg'); }
+    &.canary { background-image: url('../../../public/canary/cover2.jpg'); }
+    &.islanddwell { background-image: url('../../../public/islanddwell/cover.jpg'); }
+    &.apeak { background-image: url('../../../public/canary/bottle1.jpg'); }
+    
+    .listing {
+    
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 700px;
+
+        mix-blend-mode: difference;
+        color: rgb(var(--difference-rgb));
+
+        li {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            gap: 0.5em;
+            padding: 1em 0;
+
+            hr {
+                flex: 1;
+                background-color: transparent;
+                border-top: dotted 1px;
+                opacity: 0.25;
+            }
+
+            h3 {
+                font-size: 0.8em;
+                opacity: 0.75;
+            }
+
+        }
+
+    }
+}

@@ -18,6 +18,15 @@ export default function Brand() {
         fx: 'difference'
       }
     ];
+    var billboard = [
+      {
+        type: 'full',
+        src: '/canary/logo.jpg',
+        bg: 'none',
+        weight: 'even',
+        fx: 'none'
+      }
+    ];
     var logos = [
       {
         type: 'full',
@@ -103,11 +112,12 @@ export default function Brand() {
     
 
   return (
-    <main className={styles.mainCol}>
-      <Overview hero="/canary/logo.jpg"/>
+    <main className={`${styles.mainCol} ${styles.indent}`}>
+      <Overview hero="/canary/short-jar.jpg"/>
       <Gallery images={tag} />
       <Gallery images={logos} />
       <Gallery images={lifestyle} />
+      <Gallery images={billboard} />
       {/* <Logos
         chapter="01"
         desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu vehicula metus, a facilisis sapien. Maecenas pharetra, dui quis ullamcorper dignissim, odio lacus convallis lectus, quis facilisis augue lectus ut ipsum."

@@ -1,0 +1,49 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: calc(2em + 3vw * 5) 0 10vw 0;
+    gap: 2vw;
+
+    animation: fadeIn cubic-bezier(0.5, 0, 0.2, 1) 0.5s;
+
+    .rowContainer {
+        width: 90%;
+        max-width: calc(800px + 60px + 3em);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1em;
+        margin-bottom: 1em;
+    }
+
+    p {
+        width: 90%;
+        max-width: 800px;
+        font-weight: 200;
+        font-size: clamp(0.8em, 4vw, 1.75em);
+
+        b {
+            font-weight: 500;
+        }
+
+        &.title {
+            font-weight: 500;
+        }
+    }
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

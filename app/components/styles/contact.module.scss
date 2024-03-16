@@ -1,0 +1,175 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: calc(3vw * 5) 0 10vw 0;
+    gap: 2vw;
+    min-height: 100vh;
+
+    animation: fadeIn cubic-bezier(0.5, 0, 0.2, 1) 0.5s;
+
+    svg {
+        height: 25vw;
+        max-height: 200px;
+        width: auto;
+        fill: rgb(var(--foreground-rgb));
+    }
+
+    // .rowContainer {
+    //     width: 90%;
+    //     max-width: calc(800px + 60px + 3em);
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: flex-start;
+    //     align-items: center;
+    //     gap: 1em;
+    //     margin-bottom: 1em;
+
+    //     .social {
+    //         width: 100%;
+    //         display: flex;
+    //         flex-direction: row;
+    //         justify-content: flex-end;
+
+    //         svg {
+    //             height: 40px;
+    //             width: auto;
+    //             fill: rgb(var(--foreground-rgb));
+    //             opacity: 0.5;
+    //             transition: opacity 0.15s;
+
+    //             &:hover {
+    //                 opacity: 1;
+    //             }
+    //         }
+    //     }
+    // }
+
+    // form {
+    //     width: 90%;
+    //     max-width: 800px;
+    //     font-weight: 200;
+    //     font-size: clamp(0.8em, 4vw, 1.75em);
+
+    //     display: flex;
+    //     flex-direction: column;
+
+    //     .formRow {
+    //         display: flex;
+    //         flex-direction: row;
+    //         gap: 2em;
+    //         width: 100%;
+    //         margin-bottom: 1.5em;
+    //     }
+
+    //     .formInput {
+    //         display: flex;
+    //         flex-direction: column;
+    //         width: 100%;
+    //     }
+
+    //     input, textarea {
+    //         background: rgba(var(--foreground-rgb), 0.025);
+    //         transition: background 0.15s;
+    //         padding: 0.75em 1em;
+    //         border-radius: 4px;
+    //         font-size: 0.7em;
+    //         border: 1px solid rgba(var(--foreground-rgb), 0.05);
+
+    //         &:focus {
+    //             outline: none;
+    //             background: rgba(var(--foreground-rgb), 0.1);
+    //             border: 1px solid rgba(var(--foreground-rgb), 0.1);
+    //         }
+    //     }
+
+    //     label {
+    //         font-size: 0.5em;
+    //         opacity: 0.5;
+    //         margin-top: 0.5em;
+    //         font-weight: 300;
+    //     }
+
+    //     button {
+    //         padding: 0.5em;
+    //         background: rgb(var(--foreground-rgb));
+    //         color: rgb(var(--background-rgb));
+    //         opacity: 0.9;
+    //         transition: opacity 0.15s;
+
+    //         font-size: 0.7em;
+    //         font-weight: 500;
+
+    //         border-radius: 100px;
+
+    //         &:hover {
+    //             opacity: 1;
+    //         }
+
+    //         &:focus {
+    //             outline: none;
+    //         }
+    //     }
+
+    //     &.title {
+    //         font-weight: 500;
+    //     }
+    // }
+
+    // p {
+    //     width: 90%;
+    //     max-width: 800px;
+    //     font-weight: 200;
+    //     font-size: clamp(0.8em, 4vw, 1.75em);
+
+    //     &.small {
+    //         font-size: 1.2em;
+    //         a {
+    //             position: relative;
+    //             &:after {
+    //                 position: absolute;
+    //                 content: '';
+    //                 left: 0;
+    //                 bottom: 0;
+    //                 width: 0;
+    //                 height: 1px;
+    //                 background: rgba(var(--foreground-rgb), 1);
+    //                 transition: width 0.1s;
+    //             }
+    //             &:before {
+    //                 position: absolute;
+    //                 content: '';
+    //                 left: 0;
+    //                 bottom: 0;
+    //                 width: 100%;
+    //                 height: 1px;
+    //                 background: rgba(var(--foreground-rgb), 0.25);
+    //                 transition: width 0.1s;
+    //             }
+    //             &:hover {
+    //                 &:after, &:before {
+    //                     width: 100%;
+    //                 }
+    //             }
+    //         }
+    //     }
+
+    //     &.title {
+    //         font-weight: 500;
+    //     }
+    // }
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
