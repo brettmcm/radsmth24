@@ -5,16 +5,6 @@ import contact from '../components/styles/contact.module.scss'
 import Link from 'next/link';
 import { useState } from 'react';
 
-export function Back() {
-  return (
-    <svg version="1.1" className={styles.backarrow} x="0px" y="0px" viewBox="0 0 182.7 146.5">
-    <path d="M141.8,68.2H63.3c-1,0-1.5-1.3-0.8-1.9L90.8,40c0.5-0.4,0.5-1.1,0.1-1.6l-5.4-5.8c-0.4-0.5-1.1-0.5-1.6-0.1L41,72.4
-	c-0.5,0.4-0.5,1.2,0,1.6l42.8,39.8c0.5,0.4,1.2,0.4,1.6-0.1l5.4-5.8c0.4-0.5,0.4-1.2-0.1-1.6L62.6,80.3c-0.7-0.7-0.3-1.9,0.8-1.9
-	h78.5c0.6,0,1.1-0.5,1.1-1.1v-7.9C142.9,68.7,142.4,68.2,141.8,68.2z"/>
-    </svg>
-  )
-}
-
 export default function Services(props: any) {
 
     return (
