@@ -121,14 +121,16 @@ export default function Home() {
   return (
     <main className={styles.mainCol}>
       <section className={home.intro}>
-        <svg version="1.1" className={home.heromark} x="0px" y="0px" viewBox="0 0 221 193.2">
-            <path d="M34,193.2H1c-0.6,0-1-0.4-1-1V48.6c0-0.2,0.1-0.4,0.2-0.6l34-47.6C34.4,0.2,34.7,0,35,0h33c0.6,0,1,0.4,1,1v143.6
-              c0,0.2-0.1,0.4-0.2,0.6l-34,47.6C34.6,193,34.3,193.2,34,193.2z M110.8,192.8l34-47.6c0.1-0.2,0.2-0.4,0.2-0.6v-48V1
-              c0-0.6-0.4-1-1-1h-33c-0.3,0-0.6,0.2-0.8,0.4L76.1,48C76,48.2,76,48.4,76,48.6v143.6c0,0.6,0.4,1,1,1h33
-              C110.3,193.2,110.6,193,110.8,192.8z M186.7,192.8l34-47.6c0.1-0.2,0.2-0.4,0.2-0.6V1c0-0.6-0.4-1-1-1h-33c-0.3,0-0.6,0.2-0.8,0.4
-              l-34,47.6c-0.1,0.2-0.2,0.4-0.2,0.6v143.6c0,0.6,0.4,1,1,1h33C186.3,193.2,186.6,193,186.7,192.8z"/>
-          </svg>
-        <h1><b>McMillin Design Co.</b> is a graphic design studio specializing in brand strategy, visual identity, print and digital design.</h1>
+        <div className={home.content}>
+          <svg version="1.1" className={home.heromark} x="0px" y="0px" viewBox="0 0 221 193.2">
+              <path d="M34,193.2H1c-0.6,0-1-0.4-1-1V48.6c0-0.2,0.1-0.4,0.2-0.6l34-47.6C34.4,0.2,34.7,0,35,0h33c0.6,0,1,0.4,1,1v143.6
+                c0,0.2-0.1,0.4-0.2,0.6l-34,47.6C34.6,193,34.3,193.2,34,193.2z M110.8,192.8l34-47.6c0.1-0.2,0.2-0.4,0.2-0.6v-48V1
+                c0-0.6-0.4-1-1-1h-33c-0.3,0-0.6,0.2-0.8,0.4L76.1,48C76,48.2,76,48.4,76,48.6v143.6c0,0.6,0.4,1,1,1h33
+                C110.3,193.2,110.6,193,110.8,192.8z M186.7,192.8l34-47.6c0.1-0.2,0.2-0.4,0.2-0.6V1c0-0.6-0.4-1-1-1h-33c-0.3,0-0.6,0.2-0.8,0.4
+                l-34,47.6c-0.1,0.2-0.2,0.4-0.2,0.6v143.6c0,0.6,0.4,1,1,1h33C186.3,193.2,186.6,193,186.7,192.8z"/>
+            </svg>
+          <h1><b>McMillin Design Co.</b> is a graphic design studio specializing in brand strategy, visual identity, editorial and digital design.</h1>
+        </div>
       </section>
       <Gallery images={logos} />
       <Gallery images={billboard} />

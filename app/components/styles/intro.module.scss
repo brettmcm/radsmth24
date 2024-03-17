@@ -1,28 +1,35 @@
 .intro {
     position: relative;
     display: flex;
-    width: 100%;
-    max-width: 900px;
-    height: 100%;
-    min-height: 90vh;
-    padding: calc(5em + 2vw) calc(0.5em + 2vw) 0 calc(0.5em + 2vw);
-
     justify-content: flex-start;
     align-items: center;
-    gap: 2em;
+    width: 100%;
+    max-width: 900px;
+    min-height: calc(100vh - (10em + 2vw));
+    padding: calc(5em + 2vw) calc(0.5em + 2vw) 0 calc(0.5em + 2vw);
 
     animation: fadeIn cubic-bezier(0.5, 0, 0.2, 1) 0.5s;
     
-    .heromark {
-        width: 20%;
-        height: auto;
-        fill: rgb(var(--foreground-rgb));
-    }
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        // gap: 1.5em;
+        justify-content: flex-start;
+        align-items: flex-start;
 
-    h1 {
-        width: 80%;
-        font-weight: 200;
-        font-size: clamp(1em, 5vw, 2em);
+        .heromark {
+            width: calc(20% - 1.5em);
+            height: auto;
+            fill: rgb(var(--foreground-rgb));
+            margin: 0.5em 1.5em 1.5em 0;
+        }
+
+        h1 {
+            width: 80%;
+            min-width: 350px;
+            font-weight: 200;
+            font-size: clamp(1em, 5vw, 2em);
+        }
     }
 }
 
