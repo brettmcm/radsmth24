@@ -45,7 +45,8 @@ export default function Services(props: any) {
                     <h3>Editorial Design</h3>
                     <div className={about.indexline}></div>
                     <ul>
-                        <li>Book design</li>
+                        <li>Brand books</li>
+                        <li>Cover design</li>
                         <li>Layout</li>
                         <li>Typesetting</li>
                         <li>Print prep</li>

@@ -17,7 +17,7 @@ export const bric = Bricolage_Grotesque({
 })
 
 export const metadata: Metadata = {
-  title: 'Radsmth, Inc.',
+  title: 'McMillin Design Co.',
   description: 'Boutique branding and graphic design studio',
 }
 
