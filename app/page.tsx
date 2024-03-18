@@ -83,15 +83,6 @@ export default function Home() {
         fx: 'none'
       }
     ];
-  var ticker = [
-      {
-        type: 'tight',
-        src: '/canary/ticker.gif',
-        bg: 'none',
-        weight: 'even',
-        fx: 'difference'
-      }
-    ];
   var kids = [
       {
         type: 'full',
@@ -108,10 +99,60 @@ export default function Home() {
         fx: 'none'
       }
     ];
-  var dead = [
+    var dtstack = [
       {
-        type: 'small',
-        src: '/canary/canary-secondaryB.svg',
+        type: 'full',
+        src: '/dtimes/dt-stack.jpg',
+        bg: 'none',
+        weight: 'even',
+        fx: 'none'
+      }
+    ];
+    var dt3vip = [
+      {
+        type: 'full',
+        src: '/dtimes/sendit.jpg',
+        bg: 'none',
+        weight: 'even',
+        fx: 'none'
+      },
+      {
+        type: 'full',
+        src: '/dtimes/dt4-destruct.jpg',
+        bg: 'none',
+        weight: 'heavy',
+        fx: 'none'
+      }
+    ];
+    var dtlayout1 = [
+      {
+        type: 'full',
+        src: '/dtimes/dt5-snake.jpg',
+        bg: 'none',
+        weight: 'heavy',
+        fx: 'none'
+      },
+      {
+        type: 'full',
+        src: '/dtimes/united-in-dirt.jpg',
+        bg: 'none',
+        weight: 'even',
+        fx: 'none'
+      }
+    ];
+    var dtlayout2 = [
+      {
+        type: 'full',
+        src: '/dtimes/dt5-stack.jpg',
+        bg: 'none',
+        weight: 'even',
+        fx: 'none'
+      }
+    ];
+    var wheels = [
+      {
+        type: 'full',
+        src: '/dtimes/wheels-that-move.jpg',
         bg: 'none',
         weight: 'even',
         fx: 'none'
@@ -139,6 +180,11 @@ export default function Home() {
       <Gallery images={suds} />
       <Gallery images={bloopsplit} />
       <Gallery images={posters} />
+      <Gallery images={dtstack} />
+      <Gallery images={dtlayout1} />
+      <Gallery images={dtlayout2} />
+      <Gallery images={dt3vip} />
+      <Gallery images={wheels} />
 
     </main>
   )

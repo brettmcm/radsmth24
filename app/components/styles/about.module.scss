@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: calc(2em + 3vw * 5) 0 0 0;
+    padding: calc(2em + 3vw * 5) 0 5vw 0;
     gap: 2vw;
 
     animation: fadeIn cubic-bezier(0.5, 0, 0.2, 1) 0.5s;
@@ -39,12 +39,22 @@
 .services {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: calc(2em + 3vw * 5) 0 0 0;
+    padding: 10vw 0;
     gap: 2em;
 
     animation: fadeIn cubic-bezier(0.5, 0, 0.2, 1) 0.5s;
+
+    // background: rgb(255, 57, 67);
+
+    h2 {
+        width: 90%;
+        max-width: 800px;
+        font-size: clamp(0.8em, 4vw, 1.75em);
+        font-weight: 200;
+        margin-bottom: 2vw;
+    }
 
     .category {
         display: flex;
@@ -88,7 +98,7 @@
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translateX(10px);
+        transform: translateY(10px);
     }
 
     100% {
