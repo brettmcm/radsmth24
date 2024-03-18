@@ -1,9 +1,9 @@
-.main {
+.overview {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: calc(2em + 3vw * 5) 0 10vw 0;
+    padding: calc(2em + 3vw * 5) 0 0 0;
     gap: 2vw;
 
     animation: fadeIn cubic-bezier(0.5, 0, 0.2, 1) 0.5s;
@@ -34,6 +34,55 @@
         }
     }
 
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: calc(2em + 3vw * 5) 0 0 0;
+    gap: 2em;
+
+    animation: fadeIn cubic-bezier(0.5, 0, 0.2, 1) 0.5s;
+
+    .category {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0.5em;
+
+        width: 90%;
+        max-width: 800px;
+        font-weight: 200;
+        font-size: clamp(0.8em, 3vw, 1em);
+
+        & > * {
+            // border: 1px solid red;
+        }
+
+        h3 {
+            white-space: nowrap;
+            font-weight: 500;
+        }
+
+        .indexline {
+            display: block;
+            border-bottom: 1px dotted rgba(var(--foreground-rgb), 0.5);
+            width: 100%;
+            height: 1.1em;
+        }
+
+        ul {
+            width: 7.5em;
+            flex-shrink: 0;
+            li {
+                white-space: nowrap;
+                margin-bottom: 0.15em;
+            }
+        }
+    }
 }
 
 @keyframes fadeIn {
