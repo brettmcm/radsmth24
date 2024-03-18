@@ -4,8 +4,9 @@
     gap: 1em;
     width: 100%;
     padding: 0 calc(0.5em + 2vw);
+    opacity: 0;
 
-    animation: fadeIn cubic-bezier(0.5, 0, 0.2, 1) 0.5s;
+    animation: fadeIn 0.75s cubic-bezier(0.5, 0, 0.2, 1) 0.15s 1 forwards;
 
     .container {
         display: flex;
