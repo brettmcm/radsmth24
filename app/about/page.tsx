@@ -13,7 +13,7 @@ export default function Services(props: any) {
             </section>
 
             <section className={about.services}>
-                <h2>Services2</h2>
+                <h2>Services</h2>
 
                 <div className={about.category}>
                     <h3>Branding</h3>
