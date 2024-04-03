@@ -3,9 +3,9 @@
     display: flex;
     flex-direction: column;
     gap: 1em;
-    height: 100%;
-    overflow-y: auto;
-    padding-bottom: 10vw;
+    // height: 100%;
+    // overflow-y: auto;
+    padding-bottom: 70vh;
 
     &.indent {
         padding-top: calc(10vw + 5em);

@@ -34,27 +34,45 @@
 
 .footer {
     position: fixed;
-    bottom: calc(0.5em + 2vw);
-    left: 0;
-    width: 100%;
-    z-index: 10000;
-
-
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    user-select: none;
-    .contactbutton {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: calc(100% - (1em + 4vw));
-        border-top:1.25px solid rgba(var(--foreground-rgb), 0.95);
-        background: rgba(var(--foreground-rgb), 0.95);
-        color: rgb(var(--background-rgb));
-        padding: 1em;
-        border-radius: 3em;
+    bottom: 0;
+    width: 100%;
+    height: 40vh;
+    pointer-events: none;
+    z-index: -1;
+
+    color: rgb(var(--foreground-rgb));
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.15;
     }
+
+    .tag {
+        font-family: "synthemesc", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: uppercase;
+        font-size: 3em;
+    }
+
+    .smallprint {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        font-weight: 400;
+        opacity:0.5;
+    }
+
 }
 
 .nav {
