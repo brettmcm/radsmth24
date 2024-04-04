@@ -29,7 +29,7 @@ export default function Footer() {
             style={{opacity: opacity}}
             className={styles.footer}>
                 <img src="/logowall.svg" alt="" />
-                <div className={styles.tag}>Do less, better.</div>
+                <div className={styles.tag}>Follow the fun</div>
                 <div className={styles.smallprint}>
                     <div>Socials</div>
                     ©2024 McMilling Design Co.

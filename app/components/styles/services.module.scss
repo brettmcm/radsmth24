@@ -21,8 +21,19 @@
             font-weight: 400;
             font-style: normal;
             text-transform: uppercase;
+            color: rgb(var(--primary-rgb));
             font-size: 3em;
         }
+
+        // &:nth-child(1) { 
+        //     .servicename { color: rgb(var(--red-rgb)); }
+        // }
+        // &:nth-child(2) { 
+        //     .servicename { color: rgb(var(--green-rgb)); }
+        // }
+        // &:nth-child(3) { 
+        //     .servicename { color: rgb(var(--blue-rgb)); }
+        // }
     }
 
     @media screen and (max-width: 700px) {
