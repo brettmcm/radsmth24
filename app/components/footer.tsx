@@ -6,23 +6,16 @@ import Image from 'next/image';
 
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Link from 'next/link';
 
 export default function Footer() {
 
     const ref = useRef(null)
-    const { scrollYProgress } = useScroll({
-        // target: ref,
-        // offset: ["start start", "end end"],
-    })
+    const { scrollYProgress } = useScroll({})
     const opacity = useTransform(
         scrollYProgress,
         [0, 0.75, 1],
         [0, 0, 1],
-    )
-    const translateY = useTransform(
-        scrollYProgress,
-        [0, 0.75, 1],
-        [100, 100, 20],
     )
 
     return (
@@ -30,7 +23,18 @@ export default function Footer() {
             ref={ref}
             style={{opacity: opacity}}
             className={styles.footer}>
-                {/* <img src="/logowall.svg" alt="" /> */}
+                <div className={styles.tag}>Follow the fun</div>
+                <div className={styles.smallprint}>
+                    <Link href="https://instagram.com/radsmth">
+                        <Image
+                            src="/logo-instagram.svg"
+                            width={20}
+                            height={20}
+                            alt="Instagram Logo"
+                            />
+                    </Link>
+                    ©2024 McMilling Design Co.
+                </div>
                 <Image
                     src="/logowall.svg"
                     width={500}
@@ -38,11 +42,6 @@ export default function Footer() {
                     alt="Picture of member"
                     className={styles.footerImg}
                     />
-                <div className={styles.tag}>Follow the fun</div>
-                <div className={styles.smallprint}>
-                    <div>Socials</div>
-                    ©2024 McMilling Design Co.
-                </div>
         </motion.footer>
     )
 

@@ -38,10 +38,10 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://use.typekit.net/mrd1sel.css" />
       </head>
       <body className={inter.className}>
-        <Footer />
         <header className={styles.header} />
         {children}
         <Nav />
+        <Footer />
       </body>
     </html>
   )
