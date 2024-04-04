@@ -2,6 +2,8 @@
 
 import styles from './styles/nav.module.scss'
 
+import Image from 'next/image';
+
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
@@ -28,7 +30,14 @@ export default function Footer() {
             ref={ref}
             style={{opacity: opacity}}
             className={styles.footer}>
-                <img src="/logowall.svg" alt="" />
+                {/* <img src="/logowall.svg" alt="" /> */}
+                <Image
+                    src="/logowall.svg"
+                    width={500}
+                    height={500}
+                    alt="Picture of member"
+                    className={styles.footerImg}
+                    />
                 <div className={styles.tag}>Follow the fun</div>
                 <div className={styles.smallprint}>
                     <div>Socials</div>
