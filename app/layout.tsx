@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Bricolage_Grotesque } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 import Link from 'next/link';
 import Nav from './components/nav'
@@ -11,11 +11,6 @@ import styles from './components/styles/nav.module.scss'
 export const inter = Inter({
   subsets: ['latin'],
   weight: ['200', '400', '500', '800']
-})
-
-export const bric = Bricolage_Grotesque({
-  subsets: ['latin'],
-  weight: ['200', '400', '800']
 })
 
 export const metadata: Metadata = {
