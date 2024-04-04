@@ -1,4 +1,3 @@
-import styles from '../components/styles/globals.module.scss'
 import about from '../components/styles/about.module.scss'
 
 import Image from 'next/image'

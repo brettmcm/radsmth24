@@ -30,6 +30,11 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   h2 {
     position: relative;
     width: 90%;

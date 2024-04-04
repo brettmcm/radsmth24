@@ -1,10 +1,10 @@
 .mainCol {
-    // padding: 0 0 4.5em 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1em;
-    // height: 100%;
-    // overflow-y: auto;
+    width: 100%;
     padding-bottom: 70vh;
 
     &.indent {
@@ -29,17 +29,17 @@
 }
 
 
-.backarrow {
-    width: 40px;
-    height: auto;
-    fill: rgb(var(--foreground-rgb));
-    opacity: 0.5;
-    transition: opacity 0.15s;
+// .backarrow {
+//     width: 40px;
+//     height: auto;
+//     fill: rgb(var(--foreground-rgb));
+//     opacity: 0.5;
+//     transition: opacity 0.15s;
 
-    &:hover {
-        opacity: 1;
-    }
-}
+//     &:hover {
+//         opacity: 1;
+//     }
+// }
 
 
 @keyframes fadeIn {
@@ -65,33 +65,33 @@
     }
 }
 
-.label {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: calc(2em + 15vw) calc(0.5em + 4vw) calc(3em + 2vw) calc(0.5em + 4vw);
+// .label {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     padding: calc(2em + 15vw) calc(0.5em + 4vw) calc(3em + 2vw) calc(0.5em + 4vw);
 
-    font-size: 0.9em;
+//     font-size: 0.9em;
 
-    .overview {
-        h2 {
-            position:relative;
-            font-weight: 700;
-            margin-bottom: 0.5em;
-        }
+//     .overview {
+//         h2 {
+//             position:relative;
+//             font-weight: 700;
+//             margin-bottom: 0.5em;
+//         }
 
-        p {
-            max-width: calc(500px + 3em);
-            font-weight: 200;
-            padding-right: 3em;
-            line-height: 1.5em;
-        }
-    }
+//         p {
+//             max-width: calc(500px + 3em);
+//             font-weight: 200;
+//             padding-right: 3em;
+//             line-height: 1.5em;
+//         }
+//     }
 
-    .chapter {
-        font-weight: 700;
-        text-align: right;
-        line-height: 1.75em;
-    }
+//     .chapter {
+//         font-weight: 700;
+//         text-align: right;
+//         line-height: 1.75em;
+//     }
 
-}
+// }
