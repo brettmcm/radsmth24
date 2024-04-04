@@ -2,7 +2,7 @@ import styles from '../components/styles/globals.module.scss'
 import about from '../components/styles/about.module.scss'
 
 
-export async function Portrait(props: any) {
+function Portrait(props: any) {
     return (
         <div className={about.portrait}>
             <img src={props.image} className={about[`${props.imgclass}`]}/>
