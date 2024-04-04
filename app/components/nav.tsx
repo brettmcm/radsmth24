@@ -67,7 +67,7 @@ export default function Nav(props: any) {
     return (
         <nav id="nav" className={styles.nav}>
           <Link href="/">
-            {pathname === "/" ? "" : <Logo /> }
+            <Logo />
           </Link>
 
           <div className={styles.menu}>

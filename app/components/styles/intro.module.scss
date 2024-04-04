@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    // max-width: 900px;
     min-height: calc(100vh - (10em + 2vw));
     padding: calc(5em + 2vw) calc(0.5em + 5vw) 0 calc(0.5em + 2vw);
 
@@ -23,9 +22,6 @@
             height: auto;
             fill: rgb(var(--foreground-rgb));
             transform: translateX(1vw);
-            // fill: rgb(var(--primary-rgb));
-            // max-width: 300px;
-            // margin: 0.5em 1.5em 1.5em 0;
         }
 
         h1 {
@@ -35,21 +31,7 @@
             font-style: normal;
             text-transform: uppercase;
             color: rgb(var(--primary-rgb));
-            // &:nth-child(1) { margin: 0 0 10vw 0; }
-            // &:nth-child(3) { margin: 10vw 0 0 0; }
         }
-    }
-}
-
-.caseStudy {
-    padding: 0 calc(0.5em + 2vw);
-
-    .csBody {
-        border-radius: 2px;
-        padding: calc(0.5em + 2vw);
-        min-height: 80vh;
-        background-size: cover;
-        background-position: center center;
     }
 }
 

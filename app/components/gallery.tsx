@@ -6,7 +6,6 @@ export default function Gallery(props: any) {
     
 
     return (
-        <div>
         <section className={styles.gallery}>
             {props.images.map((image: any, i: any) => (
                 <div className={`${styles.container} ${styles[`${image.weight}`]} ${styles[`${image.type}`]}`}
@@ -23,7 +22,6 @@ export default function Gallery(props: any) {
                 </div>
             ))}
         </section>
-        </div>
     )
 
 }

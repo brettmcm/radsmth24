@@ -146,31 +146,6 @@ export default function Home() {
         fx: 'none'
       }
     ];
-    var idhero = [
-      {
-        type: 'full',
-        src: '/islanddwell/hero.jpg',
-        bg: 'none',
-        weight: 'even',
-        fx: 'none'
-      }
-    ];
-    var idapeak = [
-      {
-        type: 'full',
-        src: '/apeak.jpg',
-        bg: 'none',
-        weight: 'heavy',
-        fx: 'none'
-      },
-      {
-        type: 'full',
-        src: '/islanddwell/vibe.jpg',
-        bg: 'none',
-        weight: 'even',
-        fx: 'none'
-      }
-    ];
 
   return (
     <main className={styles.mainCol}>
@@ -179,9 +154,6 @@ export default function Home() {
           <h1>MCM</h1>
           <Logo />
           <h1>Design CO.</h1>
-          {/* <h1><b>McMillin Design Co.</b> is a graphic design studio specializing in brand strategy, visual identity, editorial and digital design.</h1> */}
-          {/* <h1><b>McMillin Design Co.</b><br/>
-          Brand. Editorial. Digital.</h1> */}
         </div>
       </section>
       <Gallery images={logos} />
@@ -195,8 +167,6 @@ export default function Home() {
       <Gallery images={dtlayout1} />
       <Gallery images={dtlayout2} />
       <Gallery images={dt3vip} />
-      {/* <Gallery images={idapeak} />
-      <Gallery images={idhero} /> */}
 
     </main>
   )
