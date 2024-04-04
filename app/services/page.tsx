@@ -4,7 +4,6 @@ import { branding, design, editorial, ux } from '../layout'
 
 import Link from 'next/link'
 
-import { motion } from "framer-motion"
 
 
 export function Overview() {

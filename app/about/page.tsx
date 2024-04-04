@@ -2,7 +2,7 @@ import styles from '../components/styles/globals.module.scss'
 import about from '../components/styles/about.module.scss'
 
 
-function Portrait(props: any) {
+export function Portrait(props: any) {
     return (
         <div className={about.portrait}>
             <img src={props.image} className={about[`${props.imgclass}`]}/>
@@ -40,7 +40,7 @@ export function Bios() {
     )
 }
 
-export default function About(props: any) {
+export default function About() {
 
     return (
         <main className={styles.mainCol}>
