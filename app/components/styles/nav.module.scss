@@ -95,23 +95,28 @@
     animation: fadeIn cubic-bezier(0.5, 0, 0.2, 1) 2s;
 
     .logomark, .backarrow {
-        height: 30px;
+        height: 12vw;
+        max-height: 5em;
         width: auto;
         fill: rgb(var(--difference-rgb));
         animation: fadeIn cubic-bezier(0.5, 0, 0.2, 1) 2s;
+        padding: 1em;
+        transform: translateX(-0.8em);
     }
     
     .menu {
         display: flex;
         flex-direction: row;
-        height: 30px;
+        align-items: center;
+        height: 12vw;
+        max-height: 5em;
         gap: 2em;
         font-size: 1em;
         font-weight: 500;
         color: rgba(var(--difference-rgb));
 
         svg {
-            height: 30px;
+            height: 5em;
             width: auto;
             fill: rgb(var(--foreground-rgb));
         }
