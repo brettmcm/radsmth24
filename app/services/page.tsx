@@ -3,6 +3,7 @@ import services from '../components/styles/services.module.scss'
 import { branding, design, editorial, ux } from '../layout'
 
 import Link from 'next/link'
+import Image from 'next/image'
 
 
 
@@ -11,17 +12,35 @@ export function Overview() {
         <section className={services.overview}>
 
             <div className={services.service}>
-                <img src="services/branding.gif" />
+                {/* <img src="services/branding.gif" /> */}
+                <Image
+                    src="/services/branding.gif"
+                    width={500}
+                    height={500}
+                    alt="Picture of member"
+                    />
                 <p className={services.servicename}>Branding</p>
             </div>
 
             <div className={services.service}>
-                <img src="services/editorial.gif" />
+                {/* <img src="services/editorial.gif" /> */}
+                <Image
+                    src="/services/editorial.gif"
+                    width={500}
+                    height={500}
+                    alt="Picture of member"
+                    />
                 <p className={services.servicename}>Print</p>
             </div>
 
             <div className={services.service}>
-                <img src="services/digital.gif" />
+                {/* <img src="services/digital.gif" /> */}
+                <Image
+                    src="/services/digital.gif"
+                    width={500}
+                    height={500}
+                    alt="Picture of member"
+                    />
                 <p className={services.servicename}>Digital</p>
             </div>
 
@@ -33,14 +52,28 @@ export function Testimonial(props: any) {
     return (
         <section className={services.testimonial}>
             <blockquote>
-                <img src={props.logo} className={services.quotelogo} />
+                {/* <img src={props.logo} className={services.quotelogo} /> */}
+                <Image
+                    src={props.logo}
+                    width={500}
+                    height={500}
+                    alt="Picture of member"
+                    className={services.quotelogo}
+                    />
                 <p>{props.quote}</p>
                 <footer>
                     {props.author}
                     <cite>{props.cite}</cite>
                 </footer>
             </blockquote>
-            <img src={props.image} className={services.bgimage} />
+            {/* <img src={props.image} className={services.bgimage} /> */}
+            <Image
+                    src={props.image}
+                    width={500}
+                    height={500}
+                    alt="Picture of member"
+                    className={services.bgimage}
+                    />
         </section>
     )
 }
@@ -114,8 +147,8 @@ export default function About(props: any) {
             <Testimonial
                 name="Branding"
                 list="Strategy, Logo Design, Visual Identity, Style Guide, Brand Guide, Art Direction"
-                logo="../logos/canary.svg"
-                image="../services/canary.jpg"
+                logo="/logos/canary.svg"
+                image="/services/canary.jpg"
                 quote="Brett is an ideal designer to guide you on the path to a new style ... It's not quite Jesus and the single set of footsteps on the beach but it's darn close."
                 author="Andrew"
                 cite="Apeak Invest, Founder"
@@ -131,8 +164,8 @@ export default function About(props: any) {
             <Testimonial
                 name="Branding"
                 list="Strategy, Logo Design, Visual Identity, Style Guide, Brand Guide, Art Direction"
-                logo="../logos/apeak.svg"
-                image="../services/apeak.jpg"
+                logo="/logos/apeak.svg"
+                image="/services/apeak.jpg"
                 quote="Brett is an ideal designer to guide you on the path to a new style ... It's not quite Jesus and the single set of footsteps on the beach but it's darn close."
                 author="Andrew"
                 cite="Apeak Invest, Founder"

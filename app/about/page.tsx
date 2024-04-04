@@ -1,11 +1,19 @@
 import styles from '../components/styles/globals.module.scss'
 import about from '../components/styles/about.module.scss'
 
+import Image from 'next/image'
+
 
 export function Portrait(props: any) {
     return (
         <div className={about.portrait}>
-            <img src={props.image} className={about[`${props.imgclass}`]}/>
+            <Image
+                src={props.image}
+                width={500}
+                height={500}
+                alt="Picture of member"
+                className={about[`${props.imgclass}`]}
+                />
         </div>
     )
 }
