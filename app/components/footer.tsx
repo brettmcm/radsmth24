@@ -40,6 +40,7 @@ export default function Footer() {
     return (
         <motion.footer
             ref={ref}
+            initial={{ opacity: 0 }}
             style={{opacity: opacity}}
             className={styles.footer}>
                 <div className={styles.tag}>Follow the fun</div>
