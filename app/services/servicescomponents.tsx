@@ -5,42 +5,37 @@ import Image from 'next/image'
 
 
 
+export function Service(props: any) {
+    return (
+        <section className={services.service}>
+            <div className={services.hero}>
+                <Image
+                    src={props.gif}
+                    width={500}
+                    height={500}
+                    alt={props.alt}
+                    />
+                <p className={services.servicename}>{props.name}</p>
+            </div>
+            <div className={services.list}>
+                <ul>
+                    {props.capabilities.map((service: any) => (
+                        <li key={service.id}>{service}</li>
+                    ))}
+                </ul>
+                {/* <Link href={props.formurl}>{props.cta}</Link> */}
+            </div>
+        </section>
+    )
+}
+
 export function Overview() {
     return (
         <section className={services.overview}>
 
-            <div className={services.service}>
-                {/* <img src="services/branding.gif" /> */}
-                <Image
-                    src="/services/branding.gif"
-                    width={500}
-                    height={500}
-                    alt="Picture of member"
-                    />
-                <p className={services.servicename}>Branding</p>
-            </div>
-
-            <div className={services.service}>
-                {/* <img src="services/editorial.gif" /> */}
-                <Image
-                    src="/services/editorial.gif"
-                    width={500}
-                    height={500}
-                    alt="Picture of member"
-                    />
-                <p className={services.servicename}>Print</p>
-            </div>
-
-            <div className={services.service}>
-                {/* <img src="services/digital.gif" /> */}
-                <Image
-                    src="/services/digital.gif"
-                    width={500}
-                    height={500}
-                    alt="Picture of member"
-                    />
-                <p className={services.servicename}>Digital</p>
-            </div>
+            <p><b>Commited to the craft.</b></p>
+            <p>is a graphic design studio specializing in brand strategy, visual identity, print and digital design. With over a decade of professional experience under our belts, we have honed our craft both at creative agencies and in-house at renowned brands.</p>
+            <p>Following the fun. Commited to the craft.</p>
 
         </section>
     )

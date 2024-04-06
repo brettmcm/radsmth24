@@ -4,14 +4,15 @@
 
 :root {
   --foreground-rgb: 255, 255, 255;
-  --background-rgb: 8, 10, 14;
+  --background-rgb: 10, 17, 25;
   /* --background-rgb: 255, 100, 75; */
   --difference-rgb: 255, 255, 255;
   --primary-rgb: 222, 255, 33;
   --red-rgb: 255, 33, 95;
   --green-rgb: 222, 255, 33;
   --blue-rgb: 0, 211, 255;
-}
+  --primary-rgb: 255, 100, 100;
+  }
 
 /* @media (prefers-color-scheme: light) {
   :root {

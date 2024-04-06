@@ -53,7 +53,7 @@ export default function Footer() {
                             alt="Instagram Logo"
                             />
                     </Link>
-                    ©2024 McMilling Design Co.
+                    ©2024 McMillin Design Co.
                 </div>
                 <Image
                     src="/logowall.svg"
