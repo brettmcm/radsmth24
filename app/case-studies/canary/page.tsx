@@ -59,31 +59,6 @@ export default function Brand() {
         fx: 'none'
       }
     ];
-  var ticker = [
-      {
-        type: 'tight',
-        src: '/canary/ticker.gif',
-        bg: 'none',
-        weight: 'even',
-        fx: 'difference'
-      }
-    ];
-  var product = [
-      {
-        type: 'full',
-        src: '/canary/bottle1.png',
-        bg: 'none',
-        weight: 'even',
-        fx: 'none'
-      },
-      {
-        type: 'full',
-        src: '/canary/jar.png',
-        bg: 'none',
-        weight: 'heavy',
-        fx: 'none'
-      }
-    ];
   var kids = [
       {
         type: 'full',
