@@ -10,58 +10,59 @@ import Link from 'next/link';
 
 export default function Footer() {
 
-    const ref = useRef(null);
-    const { scrollY } = useScroll();
-    const scrollPositionFromBottom = motionValue(0); // Initialized as a motionValue
+    // const ref = useRef(null);
+    // const { scrollY } = useScroll();
+    // const scrollPositionFromBottom = motionValue(0); // Initialized as a motionValue
 
-    useEffect(() => {
-        const calculateScrollPosition = () => {
-            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const positionFromBottom = scrollHeight - scrollY.get();
-            scrollPositionFromBottom.set(positionFromBottom); // Update the motionValue directly
-        };
+    // useEffect(() => {
+    //     const calculateScrollPosition = () => {
+    //         const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    //         const positionFromBottom = scrollHeight - scrollY.get();
+    //         scrollPositionFromBottom.set(positionFromBottom); // Update the motionValue directly
+    //     };
 
-        calculateScrollPosition();
-        const unsubscribe = scrollY.onChange(calculateScrollPosition);
+    //     calculateScrollPosition();
+    //     const unsubscribe = scrollY.onChange(calculateScrollPosition);
 
-        return () => {
-            unsubscribe();
-        };
-    }, [scrollY, scrollPositionFromBottom]);
+    //     return () => {
+    //         unsubscribe();
+    //     };
+    // }, [scrollY, scrollPositionFromBottom]);
     
-    const opacity = useTransform(
-        scrollPositionFromBottom,
-        [0, 150],
-        [1, 0]
-    );
+    // const opacity = useTransform(
+    //     scrollPositionFromBottom,
+    //     [0, 150],
+    //     [1, 0]
+    // );
 
 
 
     return (
         <motion.footer
-            ref={ref}
-            initial={{ opacity: 0 }}
-            style={{opacity: opacity}}
+            // ref={ref}
+            // initial={{ opacity: 0 }}
+            // style={{opacity: opacity}}
             className={styles.footer}>
-                <div className={styles.tag}>Follow the fun</div>
+                {/* <div className={styles.tag}>Follow the fun</div> */}
                 <div className={styles.smallprint}>
                     <Link href="https://instagram.com/radsmth">
-                        <Image
+                        {/* <Image
                             src="/logo-instagram.svg"
                             width={20}
                             height={20}
                             alt="Instagram Logo"
-                            />
+                            /> */}
+                            Instagram
                     </Link>
-                    ©2024 McMillin Design Co.
+                    ©2024 Radsmth, Inc.
                 </div>
-                <Image
+                {/* <Image
                     src="/logowall.svg"
                     width={500}
                     height={500}
                     alt="Picture of member"
                     className={styles.footerImg}
-                    />
+                    /> */}
         </motion.footer>
     )
 

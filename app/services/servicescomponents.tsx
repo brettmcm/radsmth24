@@ -8,68 +8,21 @@ import Image from 'next/image'
 export function Service(props: any) {
     return (
         <section className={services.service}>
-            <div className={services.hero}>
-                <Image
-                    src={props.gif}
-                    width={500}
-                    height={500}
-                    alt={props.alt}
-                    />
-                <p className={services.servicename}>{props.name}</p>
-            </div>
-            <div className={services.list}>
-                <ul>
-                    {props.capabilities.map((service: any) => (
-                        <li key={service.id}>{service}</li>
-                    ))}
-                </ul>
-                {/* <Link href={props.formurl}>{props.cta}</Link> */}
-            </div>
-        </section>
-    )
-}
-
-export function Overview() {
-    return (
-        <section className={services.overview}>
-
-            <p><b>Commited to the craft.</b></p>
-            <p>is a graphic design studio specializing in brand strategy, visual identity, print and digital design. With over a decade of professional experience under our belts, we have honed our craft both at creative agencies and in-house at renowned brands.</p>
-            <p>Following the fun. Commited to the craft.</p>
-
-        </section>
-    )
-}
-
-export function Testimonial(props: any) {
-    return (
-        <section className={services.testimonial}>
-            <blockquote>
-                {/* <img src={props.logo} className={services.quotelogo} /> */}
-                <Image
-                    src={props.logo}
-                    width={500}
-                    height={500}
-                    alt="Picture of member"
-                    className={services.quotelogo}
-                    />
-                <p>{props.quote}</p>
-                <footer>
-                    {props.author}
-                    <cite>{props.cite}</cite>
-                </footer>
-            </blockquote>
-            {/* <img src={props.image} className={services.bgimage} /> */}
             <Image
-                    src={props.image}
-                    width={500}
-                    height={500}
-                    alt="Picture of member"
-                    className={services.bgimage}
-                    />
+                src={props.gif}
+                width={500}
+                height={500}
+                alt={props.alt}
+                />
+            <p className={services.servicename}>{props.name}</p>
+            <p>{props.desc}</p>
         </section>
     )
 }
+
+
+
+
 
 
 export function Services(props: any) {

@@ -6,36 +6,36 @@
     align-items: center;
     bottom: 0;
     width: 100%;
-    height: 40vh;
-    opacity: 0;
+    padding: 2%;
+    opacity: 1;
+    mix-blend-mode: difference;
+    color: rgb(var(--difference-rgb));
 
-    color: rgb(var(--foreground-rgb));
+    // .footerImg {
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     object-fit: cover;
+    //     opacity: 0.25;
+    // }
 
-    .footerImg {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 0.25;
-    }
-
-    .tag {
-        font-family: "synthemesc", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        text-transform: uppercase;
-        font-size: clamp(2em, 5vw, 3em);
-        color: rgb(var(--primary-rgb));
-    }
+    // .tag {
+    //     font-family: "walnut", sans-serif;
+    //     font-weight: 400;
+    //     font-style: normal;
+    //     text-transform: uppercase;
+    //     font-size: clamp(2em, 5vw, 3em);
+    //     color: rgb(var(--foreground-rgb));
+    // }
 
     .smallprint {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 90%;
-        font-weight: 400;
+        width: 100%;
+        font-weight: 300;
         font-size: 0.9em;
         opacity: 1;
         z-index: 1000;
@@ -53,15 +53,18 @@
     left: 0;
     width: 100%;
     gap: 1em;
-    padding: calc(1em + 2vw);
+    padding: 2%;
     user-select: none;
     z-index: 2000;
     mix-blend-mode: difference;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: rgb(var(--difference-rgb));
     filter: blur(0.2px);
     animation: fadeIn cubic-bezier(0.5, 0, 0.2, 1) 3s;
 
     .logomark, .backarrow {
-        height: 12vw;
+        // height: 12vw;
         max-height: 4em;
         width: auto;
         fill: rgb(var(--difference-rgb));
@@ -74,11 +77,11 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        height: 12vw;
+        // height: 12vw;
         max-height: 4em;
         gap: 2em;
-        font-size: 1em;
-        font-weight: 500;
+        // font-size: 1.2em;
+        font-weight: 300;
         color: rgba(var(--difference-rgb));
 
         svg {
@@ -86,6 +89,8 @@
             width: auto;
             fill: rgb(var(--foreground-rgb));
         }
+
+        
     }
 }
 

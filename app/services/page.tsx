@@ -1,8 +1,19 @@
+import { Overview, Disruptor } from '../components/globals'
 import styles from '../components/styles/globals.module.scss'
-import { branding, design, editorial, ux } from '../layout'
-import { Overview, Testimonial, Services, Service } from './servicescomponents'
+import { Service, Services } from './servicescomponents'
+import Gallery from '../components/gallery'
 
 export default function About(props: any) {
+
+    var servicehero = [
+      {
+        type: 'full',
+        src: '/canary/cover2.jpg',
+        bg: 'none',
+        weight: 'even',
+        fx: 'none'
+      }
+    ];
 
     const brandingCaps = ["Strategy", "Logo design", "Style guide", "Brand guide", "Art direction"];
     const designCaps = ["Illustration", "Lettering", "Posters", "Apparel", "Packaging", "Signage"];
@@ -10,49 +21,40 @@ export default function About(props: any) {
  
     return (
         <main className={styles.mainCol}>
-            <Overview />
-            <Testimonial
-                name="Branding"
-                list="Strategy, Logo Design, Visual Identity, Style Guide, Brand Guide, Art Direction"
-                logo="/logos/canary.svg"
-                image="/services/canary.jpg"
-                quote="Brett is an ideal designer to guide you on the path to a new style ... It's not quite Jesus and the single set of footsteps on the beach but it's darn close."
-                author="Andrew"
-                cite="Apeak Invest, Founder"
+            <Overview 
+                head="Services"
+                body="Elastic and durable, we scale to fit your needs"    
             />
-            <Service
-                name="Branding"
-                gif="/services/branding.gif"
-                alt="Spinning dot animation"
-                capabilities={brandingCaps}
-                formurl=""
-                cta="Request branding work"
-            />
-            <Service
-                name="Graphic Design"
-                gif="/services/digital.gif"
-                alt="Print animation"
-                capabilities={designCaps}
-                formurl=""
-                cta="Request graphic design work"
-            />
-            <Service
-                name="Print"
-                gif="/services/editorial.gif"
-                alt="Digital animation"
-                capabilities={printCaps}
-                formurl=""
-                cta="Request print work"
-            />
-            <Testimonial
-                name="Branding"
-                list="Strategy, Logo Design, Visual Identity, Style Guide, Brand Guide, Art Direction"
-                logo="/logos/apeak.svg"
-                image="/services/apeak.jpg"
-                quote="Brett is an ideal designer to guide you on the path to a new style ... It's not quite Jesus and the single set of footsteps on the beach but it's darn close."
-                author="Andrew"
-                cite="Apeak Invest, Founder"
-            />
+            <Gallery images={servicehero} />
+            <div className={ `${styles.row} ${styles.top}` }>
+                <Service
+                    name="Identity"
+                    gif="/services/branding.gif"
+                    alt="Spinning dot animation"
+                    capabilities={brandingCaps}
+                    desc="A scaleable engagement intended to get your brand from zero to one. Discovery, exploration, & delivery all in one effort."
+                    formurl=""
+                    cta="Request branding work"
+                />
+                <Service
+                    name="Activation"
+                    gif="/services/digital.gif"
+                    alt="Print animation"
+                    capabilities={designCaps}
+                    desc="A scaleable engagement intended to get your brand from zero to one. Discovery, exploration, & delivery all in one effort."
+                    formurl=""
+                    cta="Request graphic design work"
+                />
+                <Service
+                    name="Consultation"
+                    gif="/services/editorial.gif"
+                    alt="Digital animation"
+                    capabilities={printCaps}
+                    desc="A scaleable engagement intended to get your brand from zero to one. Discovery, exploration, & delivery all in one effort."
+                    formurl=""
+                    cta="Request print work"
+                />
+            </div>
         </main>
     )
 

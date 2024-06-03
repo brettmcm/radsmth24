@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Link from 'next/link';
 import Nav from './components/nav'
 import Footer from './components/footer';
 
@@ -14,18 +13,14 @@ export const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'McMillin Design Co.',
+  title: 'Radsmth, Inc.',
   description: 'Boutique branding and graphic design studio',
 }
-
-
 
 export const branding = true
 export const design = true
 export const editorial = true
 export const ux = false
-
-
 
 export default function RootLayout({
   children,

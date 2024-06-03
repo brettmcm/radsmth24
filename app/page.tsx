@@ -1,3 +1,4 @@
+import { Overview } from './components/globals'
 import styles from './components/styles/globals.module.scss'
 import home from './components/styles/intro.module.scss'
 import Gallery from './components/gallery'
@@ -34,7 +35,7 @@ export default function Home() {
       {
         type: 'full',
         src: '/bloop/hands.jpg',
-        bg: '#0a0b0d',
+        bg: 'none',
         weight: 'heavy',
         fx: 'none'
       }
@@ -59,7 +60,7 @@ export default function Home() {
       {
         type: 'full',
         src: '/canary/short-jar.jpg',
-        bg: '#0a0b0d',
+        bg: 'none',
         weight: 'heavy',
         fx: 'none'
       }
@@ -74,7 +75,7 @@ export default function Home() {
       },
       {
         type: 'small',
-        src: '/canary/canary-secondaryB.svg',
+        src: '/canary/icon.png',
         bg: '#F2F2F0',
         weight: 'even',
         fx: 'none'
@@ -149,13 +150,10 @@ export default function Home() {
 
   return (
     <main className={styles.mainCol}>
-      <section className={home.intro}>
-        <div className={home.content}>
-          <h1>MCM</h1>
-          <Logo />
-          <h1>Design CO.</h1>
-        </div>
-      </section>
+      <Overview 
+          head=""
+          body="Family-run branding design studio based out of San Diego"    
+      />
       <Gallery images={logos} />
       <Gallery images={billboard} />
       <Gallery images={lifestyle} />

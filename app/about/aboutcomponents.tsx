@@ -20,9 +20,38 @@ export function Overview() {
     return (
         <section className={about.overview}>
 
-            <p><b>McMillin Design Co.</b> is a graphic design studio specializing in brand strategy, visual identity, print and digital design. With over a decade of professional experience under our belts, we have honed our craft both at creative agencies and in-house at renowned brands.</p>
-            <p>Following the fun. Commited to the craft.</p>
+            <p><b>Follow the fun</b></p>
+            <p>is a graphic design studio specializing in brand strategy, visual identity, print and digital design. With over a decade of professional experience under our belts, we have honed our craft both at creative agencies and in-house at renowned brands.</p>
 
+        </section>
+    )
+}
+
+export function Testimonial(props: any) {
+
+    return (
+        <section className={`${about.testimonial} ${props.flipped ? about.flipped : ''}`}>
+            <blockquote>
+                <Image
+                    src={props.logo}
+                    width={500}
+                    height={500}
+                    alt="Picture of member"
+                    className={about.quotelogo}
+                    />
+                <p>{props.quote}</p>
+                <footer>
+                    {props.author}
+                    <cite>{props.cite}</cite>
+                </footer>
+            </blockquote>
+            {/* <Image
+                    src={props.image}
+                    width={500}
+                    height={500}
+                    alt="Picture of member"
+                    className={about.bgimage}
+                    /> */}
         </section>
     )
 }
@@ -30,17 +59,17 @@ export function Overview() {
 export function Bios() {
     return (
         <section className={about.bios}>
-            <div className={`${about.bio} ${about.left}`}>
-                <Portrait image="/brett.jpg" imgclass="brett"></Portrait>
-                <h3>Brett McMillin</h3>
-                <h4>Creative</h4>
-                <p>Pellentesque porttitor neque vitae interdum malesuada. Vivamus imperdiet sed lacus id aliquam. Vivamus in libero in tellus eleifend tincidunt at ac purus. Phasellus vestibulum, odio a venenatis aliquet, risus orci porttitor diam, at dictum purus leo a nunc.</p>
-            </div>
             <div className={`${about.bio} ${about.right}`}>
                 <Portrait image="/molly.jpg" imgclass="molly"></Portrait>
                 <h3>Molly McMillin</h3>
                 <h4>Strategy</h4>
                 <p>Pellentesque porttitor neque vitae interdum malesuada. Vivamus imperdiet sed lacus id aliquam. Vivamus in libero in tellus eleifend tincidunt at ac purus.</p>
+            </div>
+            <div className={`${about.bio} ${about.left}`}>
+                <Portrait image="/brett.jpg" imgclass="brett"></Portrait>
+                <h3>Brett McMillin</h3>
+                <h4>Creative</h4>
+                <p>Pellentesque porttitor neque vitae interdum malesuada. Vivamus imperdiet sed lacus id aliquam. Vivamus in libero in tellus eleifend tincidunt at ac purus. Phasellus vestibulum, odio a venenatis aliquet, risus orci porttitor diam, at dictum purus leo a nunc.</p>
             </div>
         </section>
     )

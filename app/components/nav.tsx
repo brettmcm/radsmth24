@@ -67,7 +67,8 @@ export default function Nav(props: any) {
     return (
         <nav id="nav" className={styles.nav}>
           <Link href="/">
-            <Logo />
+            {/* <Logo /> */}
+			Radsmth
           </Link>
 
           <div className={styles.menu}>
