@@ -18,7 +18,7 @@ export default function About() {
     return (
         <main className={styles.mainCol}>
             <Overview 
-                head="About"
+                head=""
                 body="You yourself are neither property nor diction"    
             />
             <Gallery images={abouthero} />
@@ -26,7 +26,7 @@ export default function About() {
                 body="Crafting unique and impactful brand identities that resonate with your audience."
             />
             <Testimonial
-                logo="/logos/canary.svg"
+                logo="/canary/icon.png"
                 image="/services/canary.jpg"
                 quote="Brett is an ideal designer to guide you on the path to a new style ... It's not quite Jesus and the single set of footsteps on the beach but it's darn close."
                 author="Luke"

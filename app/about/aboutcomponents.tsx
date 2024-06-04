@@ -61,13 +61,13 @@ export function Bios() {
         <section className={about.bios}>
             <div className={`${about.bio} ${about.right}`}>
                 <Portrait image="/molly.jpg" imgclass="molly"></Portrait>
-                <h3>Molly McMillin</h3>
+                <h3 className={about.molly}>Molly<br />McMillin</h3>
                 <h4>Strategy</h4>
                 <p>Pellentesque porttitor neque vitae interdum malesuada. Vivamus imperdiet sed lacus id aliquam. Vivamus in libero in tellus eleifend tincidunt at ac purus.</p>
             </div>
             <div className={`${about.bio} ${about.left}`}>
                 <Portrait image="/brett.jpg" imgclass="brett"></Portrait>
-                <h3>Brett McMillin</h3>
+                <h3 className={about.brett}>Brett<br />McMillin</h3>
                 <h4>Creative</h4>
                 <p>Pellentesque porttitor neque vitae interdum malesuada. Vivamus imperdiet sed lacus id aliquam. Vivamus in libero in tellus eleifend tincidunt at ac purus. Phasellus vestibulum, odio a venenatis aliquet, risus orci porttitor diam, at dictum purus leo a nunc.</p>
             </div>

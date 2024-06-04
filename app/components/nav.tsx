@@ -72,6 +72,7 @@ export default function Nav(props: any) {
           </Link>
 
           <div className={styles.menu}>
+            <Link href="/">Work</Link>
             <Link href="/about">About</Link>
             <Link href="/services">Services</Link>
             <Link href="mailto:brett@radsmth.com">Contact</Link>

@@ -71,7 +71,7 @@
     justify-content: center;
     align-items: flex-start;
     padding: 10vw 0 0 0;
-    gap: 2em;
+    gap: 1em;
     width: 90%;
     max-width: 1200px;
 
@@ -89,12 +89,24 @@
             position: relative;
             font-size: clamp(0.8em, 4vw, 1.75em);
             font-weight: 500;
-            margin-bottom: 0;
             font-family: "walnut", sans-serif;
             font-weight: 400;
             font-style: normal;
             text-transform: uppercase;
-            font-size: 1.75em;
+            font-size: 4em;
+            width: 100%;
+            height: 0;
+            line-height: 0.8em;
+            margin: 0 0 0.5em 0;
+            mix-blend-mode: difference;
+            color: rgb(var(--difference-rgb));
+            &.molly {
+                transform: translate(-3vw, calc(-2em - 5vw)) rotate(-3deg);
+            }
+            &.brett {
+                text-align: right;
+                transform: translate(3vw, calc(-2em - 25vw)) rotate(5deg);
+            }
         }
 
         h4 {
@@ -111,7 +123,7 @@
         .portrait {
             display: flex;
             flex-direction: row;
-            margin-bottom: 2em;
+            // margin-bottom: 2em;
             width: 100%;
     
             img {
@@ -119,7 +131,6 @@
                 object-fit: cover;
                 border-radius: 2px;
                 width: 100%;
-                // mix-blend-mode: lighten;
 
                 &.brett {
                     object-position: 40% 10%;

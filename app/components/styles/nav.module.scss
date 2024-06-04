@@ -79,7 +79,7 @@
         align-items: center;
         // height: 12vw;
         max-height: 4em;
-        gap: 2em;
+        gap: calc(1em + 2vw);
         // font-size: 1.2em;
         font-weight: 300;
         color: rgba(var(--difference-rgb));

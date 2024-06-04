@@ -22,7 +22,7 @@ export default function About(props: any) {
     return (
         <main className={styles.mainCol}>
             <Overview 
-                head="Services"
+                head=""
                 body="Elastic and durable, we scale to fit your needs"    
             />
             <Gallery images={servicehero} />
