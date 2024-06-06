@@ -49,9 +49,10 @@
   gap: 1em;
   height: 55vh;
   padding-bottom: 5vw;
+  opacity: 1;
   color: rgb(var(--difference-rgb));
-
-  animation: fadeIn cubic-bezier(0.5, 0, 0.2, 1) 0.5s;
+  mix-blend-mode: difference;
+    z-index: 999;
 
   .overviewAbs {
     position: fixed;
@@ -64,7 +65,8 @@
     justify-content: center;
     align-items: center;
     z-index: 999;
-    mix-blend-mode: difference;
+    opacity: 1;
+    animation: fadeIn cubic-bezier(0.5, 0, 0.2, 1) 0.75s;
   }
 
   p {
@@ -83,4 +85,16 @@
     }
   }
 
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }

@@ -39,14 +39,14 @@ export function Overview(props: any) {
     
     const opacity = useTransform(
         scrollPositionFromTop,
-        [100, 500],
+        [1, 500],
         [1, 0]
     );
 
     return (
         <motion.section
             ref={ref}
-            // initial={{ opacity: 1 }}
+            initial={{ opacity: 1 }}
             style={{opacity}}
             className={styles.overview}>
 
