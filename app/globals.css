@@ -19,8 +19,7 @@
 } */
 
 html, body {
-  /* height: 100%;
-  overflow: hidden; */
+  /* min-height: 100%; */
 }
 
 body {
@@ -31,6 +30,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 
   h2 {
     position: relative;
