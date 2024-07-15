@@ -29,6 +29,7 @@ export default function About() {
             <Principles />
             <Testimonial
                 logo="/canary/icon.png"
+                logoDark="/canary/icon-light.png"
                 image="/services/canary.jpg"
                 quote="Brett is an ideal designer to guide you on the path to a new style ... It's not quite Jesus and the single set of footsteps on the beach but it's darn close."
                 author="Luke"

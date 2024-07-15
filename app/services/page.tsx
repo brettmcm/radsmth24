@@ -29,7 +29,7 @@ export default function About(props: any) {
             <h2>Services</h2>
             <div className={ `${styles.row} ${styles.top}` }>
                 <Service
-                    name="Branding"
+                    name="Strategy & Design"
                     gif="/services/branding.gif"
                     alt="Spinning dot animation"
                     capabilities={brandingCaps}
