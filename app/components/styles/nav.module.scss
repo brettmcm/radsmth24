@@ -6,7 +6,7 @@
     align-items: center;
     bottom: 0;
     width: 100%;
-    padding: 2%;
+    padding: calc(2.5% + 3px);
     opacity: 1;
     mix-blend-mode: difference;
     color: rgb(var(--difference-rgb));
@@ -53,7 +53,7 @@
     left: 0;
     width: 100%;
     gap: 1em;
-    padding: 2%;
+    padding: calc(2.5% + 3px);
     user-select: none;
     z-index: 2000;
     mix-blend-mode: difference;

@@ -14,8 +14,10 @@ export function Service(props: any) {
                 height={500}
                 alt={props.alt}
                 />
-            <p className={services.servicename}>{props.name}</p>
-            <p>{props.desc}</p>
+            <div className={services.content}>
+                <p className={services.servicename}>{props.name}</p>
+                <p>{props.desc}</p>
+            </div>
         </section>
     )
 }

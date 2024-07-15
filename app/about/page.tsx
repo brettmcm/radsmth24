@@ -1,6 +1,6 @@
 import { Overview, Disruptor } from '../components/globals'
 import styles from '../components/styles/globals.module.scss'
-import { Testimonial, Bios } from './aboutcomponents'
+import { Testimonial, Bios, Principles } from './aboutcomponents'
 import Gallery from '../components/gallery'
 
 export default function About() {
@@ -18,13 +18,15 @@ export default function About() {
     return (
         <main className={styles.mainCol}>
             <Overview 
-                head=""
+                head="About"
                 body="You yourself are neither property nor diction"    
             />
             <Gallery images={abouthero} />
             <Disruptor
                 body="Crafting unique and impactful brand identities that resonate with your audience."
             />
+            <h2>Our principles</h2>
+            <Principles />
             <Testimonial
                 logo="/canary/icon.png"
                 image="/services/canary.jpg"
@@ -33,6 +35,7 @@ export default function About() {
                 cite="Founder, Canary"
                 flipped={false}
             />
+            <h2>Who we are</h2>
             <Bios />
         </main>
     )

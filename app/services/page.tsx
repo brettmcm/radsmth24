@@ -26,9 +26,10 @@ export default function About(props: any) {
                 body="Elastic and durable, we scale to fit your needs"    
             />
             <Gallery images={servicehero} />
+            <h2>Services</h2>
             <div className={ `${styles.row} ${styles.top}` }>
                 <Service
-                    name="Identity"
+                    name="Branding"
                     gif="/services/branding.gif"
                     alt="Spinning dot animation"
                     capabilities={brandingCaps}

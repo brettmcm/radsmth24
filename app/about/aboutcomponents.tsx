@@ -27,6 +27,43 @@ export function Overview() {
     )
 }
 
+function Principle(props: any) {
+    return (
+        <div className={about.principle}>
+            <Image
+                width={100}
+                height={100}
+                src={props.image}
+                alt="Picture of member"
+                className={about.image}
+                />
+                <div className={about.copy}>
+                    <h4>{props.headline}</h4>
+                    <p>{props.desc}</p>
+                </div>
+        </div>
+    )
+}
+
+export function Principles() {
+    return (
+        <section className={about.principles}>
+
+            <Principle
+                image='/canary/cover2.jpg'
+                headline="Do less, better"
+                desc="Description"
+             />
+
+            <div className={about.controls}>
+                <div className={` ${about.arrow} ${about.left}`}></div>
+                <div className={` ${about.arrow} ${about.right}`}></div>
+            </div>
+
+        </section>
+    )
+}
+
 export function Testimonial(props: any) {
 
     return (

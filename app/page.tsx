@@ -1,6 +1,5 @@
 import { Overview } from './components/globals'
 import styles from './components/styles/globals.module.scss'
-import home from './components/styles/intro.module.scss'
 import Gallery from './components/gallery'
 import { Logo } from './logo';
 
@@ -154,18 +153,19 @@ export default function Home() {
           head=""
           body="Family-run branding design studio based out of San Diego"    
       />
-      <Gallery images={logos} />
-      <Gallery images={billboard} />
-      <Gallery images={lifestyle} />
-      <Gallery images={kids} />
-      <Gallery images={suds} />
-      <Gallery images={bloopsplit} />
-      <Gallery images={posters} />
-      <Gallery images={dtstack} />
-      <Gallery images={dtlayout1} />
-      <Gallery images={dtlayout2} />
-      <Gallery images={dt3vip} />
-
+      <div className={styles.tightblock}>
+        <Gallery images={logos} />
+        <Gallery images={billboard} />
+        <Gallery images={lifestyle} />
+        <Gallery images={kids} />
+        <Gallery images={suds} />
+        <Gallery images={bloopsplit} />
+        <Gallery images={posters} />
+        <Gallery images={dtstack} />
+        <Gallery images={dtlayout1} />
+        <Gallery images={dtlayout2} />
+        <Gallery images={dt3vip} />
+      </div>
     </main>
   )
 }

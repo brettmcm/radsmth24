@@ -1,11 +1,22 @@
+
 .mainCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+  width: 100%;
+  padding-bottom: 25vh;
+  pointer-events: none;
+}
+
+.tightblock {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1em;
   width: 100%;
-  padding-bottom: 25vh;
   pointer-events: none;
 }
 
@@ -15,27 +26,32 @@
   justify-content: center;
   align-items: center;
   width: 95%;
+  max-width: 1200px;
   min-height: 70vh;
   border-radius: 4px;
   position: relative;
-  font-weight: 300;
+  font-weight: 400;
   font-size: clamp(1em, 5vw, 2.5em);
-  padding: 0 20vw;
   text-align: center;
 }
 
 .row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10vw 0;
-  gap: 2em;
+  padding: 0 0;
+  gap: calc(10em - 10vw);
   width: 90%;
 
   &.top { align-items: flex-start; }
 
   animation: fadeIn cubic-bezier(0.5, 0, 0.2, 1) 0.5s;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+
 }
 
 .overview {
@@ -47,12 +63,12 @@
   text-align: center;
   width: 95%;
   gap: 1em;
-  height: 55vh;
+  height: 45vh;
   padding-bottom: 5vw;
   opacity: 1;
   color: rgb(var(--difference-rgb));
   mix-blend-mode: difference;
-    z-index: 999;
+  z-index: 999;
 
   .overviewAbs {
     position: fixed;
@@ -74,7 +90,7 @@
     width: 90%;
     max-width: 1920px;
     font-weight: 200;
-    font-size: clamp(1em, 5vw, 3.5em);
+    font-size: clamp(1em, 5vw, 4.5em);
     line-height: 1em;
 
     b {
@@ -82,7 +98,7 @@
       font-weight: 400;
       font-style: normal;
       font-size: 2.5em;
-      line-height: 1em;
+      line-height: 0.8em;
     }
   }
 
